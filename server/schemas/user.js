@@ -16,7 +16,6 @@ const typeDefs = gql`
     name: String
     email: String
     image: String
-    access_token: String
     createdAt: String
     updatedAt: String
     isAdmin: Boolean

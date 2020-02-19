@@ -151,3 +151,59 @@ export const EDIT_SHOW = gql`
     }
   }
 `
+
+export const LOGIN_USER = gql`
+  mutation ($email: String, $password: String) {
+    loginUser(email: $email, password: $password) {
+      _id
+      name
+      email
+      isAdmin
+    }
+  }
+`
+
+export const REGISTER_USER = gql`
+  mutation ($name: String, $email: String, $password: String) {
+    registerUser(name: $name, email: $email, password: $password) {
+      _id
+      name
+      email
+      isAdmin
+    }
+  }
+`
+
+export const RATE_MOVIE = gql`
+  mutation ($id: ID, $user: String, $score: Int) {
+    rateMovie(_id: $id, user: $user, score: $score) {
+      _id
+      title
+      overview
+      poster_path
+      popularity {
+        user
+        score
+      }
+      tags
+      year
+    }
+  }
+`
+
+export const RATE_SHOW = gql`
+  mutation ($id: ID, $user: String, $score: Int) {
+    rateShow(_id: $id, user: $user, score: $score) {
+      _id
+      title
+      overview
+      poster_path
+      popularity {
+        user
+        score
+      }
+      tags
+      year
+    }
+  }
+`

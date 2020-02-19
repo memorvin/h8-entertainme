@@ -6,8 +6,7 @@ export default function Landing() {
 
   return (
     <View>
-      <Text>Landing Page</Text>
-      <LoginForm></LoginForm>
+      <LoginForm />
     </View>
   )
 }

@@ -22,7 +22,7 @@ const resolvers = {
 }
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  uri: 'http://35.223.53.125:4000',
   resolvers,
   typeDefs
 });

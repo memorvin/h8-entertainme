@@ -32,9 +32,6 @@ export default function ListCard(props) {
         <Text style={styles.btnText} >
           {props.item.title}
         </Text>
-        <Text>
-          {renderScore()}
-        </Text>
       </Container>
     </TouchableOpacity> 
   )

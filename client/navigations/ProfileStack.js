@@ -8,10 +8,10 @@ const Stack = createStackNavigator()
 export default function ProfileStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Profile"
+      initialRouteName="Landing"
     >
-      <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
       <Stack.Screen name="Landing" component={LandingScreen}></Stack.Screen>
+      <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
     </Stack.Navigator>
   )
 }
